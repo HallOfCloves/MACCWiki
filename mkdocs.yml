@@ -1,0 +1,115 @@
+site_name: MACC Wiki
+site_description: A wiki for MACCs, by MACCs.
+site_author: RatseerOfRattesse, Jarnu47
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+  custom_dir: overrides
+  palette:
+      scheme: slate
+      primary: pink
+      accent: purple
+  icon:
+    repo: fontawesome/brands/git-alt
+  features:
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.preview
+    - navigation.instant.progress
+    - navigation.indexes
+    - navigation.path
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+extra:
+  social:
+    - icon: octicons/code-16
+      link: https://github.com/RatseerOfRattesse
+      name: "Ratseer's Github"
+    - icon: material/wrench
+      link: https://modrinth.com/user/RatseerOfRattesse
+      name: "Ratseer's Modrinth"
+    - icon: material/alpha-r-circle-outline
+      link: https://www.royalroad.com/profile/725311
+      name: "Ratseer's Royalroad"
+    - icon: material/youtube
+      link: https://www.youtube.com/@RatseerOfRattesse
+      name: "Ratseer's YouTube"
+extra_css:
+  - stylesheets/extra.css
+copyright: Copyright &copy; 2025 RatseerOfRattesse & Jarnu47
+plugins:
+  - meta
+  - search:
+      pipeline:
+        - stemmer
+        - stopWordFilter
+        - trimmer
+  - redirects:
+      redirect_maps:
+        'Chronicles of the Aethein/index.md': https://ratseerofrattesse.github.io/COAWiki
+  - mkdocs-video:
+      is_video: true
+  - encryptcontent:
+      title_prefix: ''
+      global_password: 'have you heard of our lord and saviour liam vickers'
+      hljs: True
+      arithmatex: True
+      mermaid2: True
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - pymdownx.critic
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.blocks.caption
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - admonition
+  - def_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - toc:
+      permalink: "#"
+      title: Table of Contents
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - footnotes
+  - pymdownx.snippets:
+      base_path: include/
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+  - javascripts/quotesearch.js
+site_url: https://ratseerofrattesse.github.io/MACCWiki
+validation:
+  links:
+    absolute_links: relative_to_docs
