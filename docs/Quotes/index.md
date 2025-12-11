@@ -21,6 +21,10 @@ icon: material/comment-quote-outline
 <div class="admonition hez">
 <p class="admonition-title">Hez</p>
 <p class="body">"To Diddy or not to Diddy, that is the question"</p>
+<div class="admonition ruby">
+<p class="admonition-title">Ruby</p>
+<p class="body">"Ain't no party like a diddy party"</p>
+</div>
 </div>
 </li>
 <li>
