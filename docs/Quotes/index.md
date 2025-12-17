@@ -18,6 +18,28 @@ icon: material/comment-quote-outline
 
 <ul id="quoteList">
 <li>
+<div class="admonition lochlan">
+<p class="admonition-title">Lochlan</p>
+<p class="body">"Who cares about consent?"</p>
+</div>
+</li>
+<li>
+<div class="admonition teacher">
+<p class="admonition-title">Ms. Wall</p>
+<p class="body">"I swear if I have to call your parents because you choked while deepthroating a banana..."</p>
+</div>
+</li>
+<li>
+<div class="admonition misc">
+<p class="admonition-title">Johnny</p>
+<p class="body">"If you lose you're transgender."</p>
+<div class="admonition max">
+<p class="admonition-title">Max</p>
+<p class="body">"Bet! Time to be a woman!"</p>
+</div>
+</div>
+</li>
+<li>
 <div class="admonition hez">
 <p class="admonition-title">Hez</p>
 <p class="body">"To Diddy or not to Diddy, that is the question"</p>
